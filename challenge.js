@@ -59,9 +59,8 @@ const getCoursesByTitle = function (args) {
   if (args.title) {
     const title = args.title;
     return coursesData.filter((course) => course.title.includes(title));
-  } else {
-    return coursesData;
   }
+  return coursesData;
 };
 
 const createCourse = function (data) {
